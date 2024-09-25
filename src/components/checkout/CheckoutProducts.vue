@@ -17,11 +17,13 @@
             <CheckoutForm :total="total" :cart="cart"/>
         </div>
         <div class="row pt-5" v-else>
-            <AlertMessage alert_type="warning" title="No Products in Cart" message="Your cart is currently empty. Please add some products to proceed to checkout." heading_class="my-3">
-                <hr>
-                <h5>Browse our store and select products to add to your cart before checking out.</h5>
-                <router-link to="/" class="btn btn-outline-success btn-lg mt-4">Start Your Shopping Journey</router-link>
-            </AlertMessage>
+            <div class="col-12">
+                <AlertMessage alert_type="warning" title="No Products in Cart" message="Your cart is currently empty. Please add some products to proceed to checkout." heading_class="my-3">
+                    <hr>
+                    <h5>Browse our store and select products to add to your cart before checking out.</h5>
+                    <router-link to="/" class="btn btn-outline-success btn-lg mt-4">Start Your Shopping Journey</router-link>
+                </AlertMessage>
+            </div>
         </div>
     </div>
 </template>

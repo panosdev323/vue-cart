@@ -86,6 +86,12 @@ export default {
 .productsImg {
     max-width:200px;
     object-fit: cover;
+    object-position: center;
+}
+@media only screen and (max-width: 576px) {
+  .productsImg {
+    max-width:150px;
+  }
 }
 .list-group-products {
     -webkit-box-shadow: 0px 0px 8px 1px var(--shadow-color);

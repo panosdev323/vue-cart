@@ -38,5 +38,6 @@ export default {
     width:100px;
     height:100px;
     object-fit: cover;
+    object-position: center;
 }
 </style>

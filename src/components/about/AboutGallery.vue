@@ -74,6 +74,11 @@ export default {
   object-fit: contain;
   object-position: center;
 }
+@media only screen and (max-width: 576px) {
+    .carousel-item > img {
+        height: 200px;
+    }
+}
 .carousel-control-next,
 .carousel-control-prev {
     filter: invert(100%);

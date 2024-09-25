@@ -117,12 +117,18 @@ export default {
 }
 .card-img, .card-img-bottom, .card-img-top {
     width: 100%;
-    height:500px;
+    height:400px;
     object-fit: contain;
+    object-position: center;
   }
 @media only screen and (max-width: 768px) {
   .card-img, .card-img-bottom, .card-img-top {
-    height:250px;
+    height:200px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .card-img, .card-img-bottom, .card-img-top {
+    height:150px;
   }
 }
 
